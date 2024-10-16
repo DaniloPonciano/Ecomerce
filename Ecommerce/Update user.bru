@@ -1,0 +1,20 @@
+meta {
+  name: Update user
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/user/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    
+    "name": "Prof filipe",
+    "email": "filipe@senai.com",
+    "password": "sextou"
+  }
+}
